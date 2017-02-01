@@ -4,9 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./styles.css">
   <title>Vaporwave Polling</title>
 </head>
+
 <body>
+  <form id="form-poll" action="index.html" method="post">
+    <h2>I would suggest that you enter a new poll below</h2>
+    <p>It's you choice, but otherwise you won't be able to use the app</p>
+
+    <label class="form-poll-title" for="title">
+      If you want a question for your poll, you should enter one here
+      <input type="text" name="title" id="form-poll-title" value=''>
+    </label>
+    <label class="form-poll-input" for="input-one">
+      This is where you can submit an answer
+      <input type="text" name="input-one" id="form-poll-input1" value="">
+    </label>
+    <label class="form-poll-input" for="input-two">
+      This is where you can submit another answer
+      <input type="text" name="input-two" id="form-poll-input2" value="">
+    </label>
+    <label class="form-poll-input" for="input-three">
+      Would you like a third place for an answer? Here is a spot
+      <input type="text" name="input-three" id="form-poll-input3" value="">
+    </label>
+    <label class="form-poll-input" for="input-four">
+      Almost forget to add a fourth answer slot. Here ya go
+      <input type="text" name="input-four" id="form-poll-input4" value="">
+    </label>
+
+    <button class="submit-poll-button" type="submit">Submit your poll. Hope the answers aren't all "asdf asdf asdf" because that isn't very fun</button>
+  </form>
 
 </body>
 </html>
